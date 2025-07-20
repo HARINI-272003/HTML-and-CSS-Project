@@ -1,0 +1,76 @@
+.gif{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 1000px;
+    right: 500px;
+    top: 200px;
+}
+body{
+    background-color: rgb(215, 228, 228);
+}
+.main{
+    background-color: rgb(172, 137, 205);
+    padding-bottom: 100px;
+}
+.logo{
+    color: rgb(110, 56, 143);
+    font-size: 50px;
+    font-family:fantasy;
+    padding-left: 100px;
+    float: left;
+    padding-top: 20px;
+    text-shadow: 5px 5px 5px rgb(167, 102, 187);
+    animation: fadeSlideIn 1.2s ease-in-out forwards;
+}
+.menu{
+    width: 50px;
+    float: left;
+    height: 50px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeSlideIn 1.2s ease-in-out forwards;
+}
+ul li{
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+ul li a:hover{
+    color:darkred;
+}
+.content{
+    font-size: 30px;
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 150px;
+    color: rgb(41, 39, 93); 
+    animation: slideIn 2.5s ease-in-out forwards;
+}
+@keyframes slideIn{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes fadeSlideIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

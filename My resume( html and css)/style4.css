@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(215, 228, 228);
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 50px;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(77, 6, 144);
+    animation: fadeSlideIn 2.5s ease-in-out forwards;
+}
+img{
+    position: fixed;
+    padding-left: 50px;
+    animation: slideIn 3s ease-in-out forwards;
+}
+@keyframes slideIn{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.projects{
+    padding-left: 380px;
+    padding-right: 50px;
+    text-align: justify;
+    animation: slideIn 3s ease-in-out forwards;
+}
+@keyframes slideIn{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: inline-block;
+}
+.pagination a.active{
+    background-color: chartreuse;
+    border-radius: 5px;
+}
+@keyframes fadeSlideIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
